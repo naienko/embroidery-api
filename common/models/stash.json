@@ -1,0 +1,45 @@
+{
+  "name": "stash",
+  "plural": "stashes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "userId": {
+      "type": "number",
+      "required": true
+    },
+    "fiberId": {
+      "type": "number",
+      "required": true
+    },
+    "inUse": {
+      "type": "boolean"
+    },
+    "projectNotes": {
+      "type": "string"
+    },
+    "otherNotes": {
+      "type": "string"
+    },
+    "howMany": {
+      "type": "number",
+      "required": true,
+      "default": 1
+    },
+    "partialHank": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

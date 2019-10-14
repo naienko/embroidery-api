@@ -1,0 +1,37 @@
+{
+  "name": "identifier",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number"
+    },
+    "number": {
+      "type": "number"
+    },
+    "name2": {
+      "type": "string"
+    },
+    "name3": {
+      "type": "string"
+    },
+    "name4": {
+      "type": "string"
+    },
+    "companyId": {
+      "type": "number",
+      "required": true
+    },
+    "typeId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
