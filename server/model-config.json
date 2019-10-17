@@ -14,7 +14,7 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "threaddb"
   },
   "AccessToken": {
     "dataSource": "db",
@@ -25,15 +25,15 @@
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
-    "public": false,
+    "dataSource": "threaddb",
+    "public": true,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
-    "public": false
+    "dataSource": "threaddb",
+    "public": true
   },
   "stash": {
     "dataSource": "threaddb",
@@ -52,6 +52,10 @@
     "public": true
   },
   "identifier": {
+    "dataSource": "threaddb",
+    "public": true
+  },
+  "stitcher": {
     "dataSource": "threaddb",
     "public": true
   }
