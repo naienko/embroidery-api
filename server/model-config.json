@@ -26,14 +26,14 @@
   },
   "RoleMapping": {
     "dataSource": "threaddb",
-    "public": true,
+    "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
     "dataSource": "threaddb",
-    "public": true
+    "public": false
   },
   "stash": {
     "dataSource": "threaddb",

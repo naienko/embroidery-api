@@ -6,13 +6,20 @@
     "validateUpsert": true
   },
   "properties": {
-    "username": {
+    "name": {
       "type": "string",
       "required": false
     }
   },
   "validations": [],
   "relations": {},
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "superuser",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }
