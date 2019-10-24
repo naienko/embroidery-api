@@ -14,7 +14,7 @@
       "type": "number",
       "required": true
     },
-    "fiberId": {
+    "identifierId": {
       "type": "number",
       "required": true
     },
@@ -39,7 +39,24 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "stitchers": {
+      "type": "hasOne",
+      "model": "stitcher",
+      "foreignKey": "id",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "fibers": {
+      "type": "hasMany",
+      "model": "identifier",
+      "foreignKey": "id",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [
     {
       "accessType": "*",
