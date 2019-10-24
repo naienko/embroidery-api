@@ -22,24 +22,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "stitchers": {
-      "type": "hasOne",
-      "model": "stitcher",
-      "foreignKey": "id",
-      "options": {
-        "nestRemoting": true
-      }
-    },
-    "fibers": {
-      "type": "hasMany",
-      "model": "identifier",
-      "foreignKey": "id",
-      "options": {
-        "nestRemoting": true
-      }
-    }
-  },
+  "relations": {},
   "acls": [
     {
       "accessType": "*",

@@ -32,21 +32,15 @@
   },
   "validations": [],
   "relations": {
-    "types": {
-      "type": "hasOne",
-      "model": "type",
-      "foreignKey": "id",
-      "options": {
-        "nestRemoting": true
-      }
-    },
-    "companies": {
-      "type": "hasOne",
+    "company": {
+      "type": "belongsTo",
       "model": "company",
-      "foreignKey": "id",
-      "options": {
-        "nestRemoting": true
-      }
+      "foreignKey": "companyId"
+    },
+    "type": {
+      "type": "belongsTo",
+      "model": "type",
+      "foreignKey": "typeId"
     }
   },
   "acls": [
